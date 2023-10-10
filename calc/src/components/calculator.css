@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #d7c6f3;
+}
+div {
+  display: block;
+}
+
+.calc {
+  border: 2px solid white;
+
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  font-family: Roboto, sans-serif;
+  position: relative;
+  user-select: none;
+  border-radius: 15px;
+}
+.calculator {
+  align-items: center;
+  gap: 4px;
+  padding: 40px 20px;
+}
+.top-layer {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  width: 100%;
+  gap: 10px;
+}
+
+.top-layer button {
+  border-radius: 12px;
+  background-color: #9276bd;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+
+  font-stretch: 100%;
+  text-transform: none;
+
+  text-align: center;
+  text-indent: 0px;
+  white-space: nowrap;
+  padding: 12px 16px;
+  box-shadow: none;
+}
+.top-layer button:active {
+    background-color: #9276bd;
+    color: black;
+  }
+  
+  .top-layer button:focus {
+    background-color: #9276bd;
+    color: black;
+  }
+
+.paper-select {
+  width: 100%;
+
+  margin-top: 40px;
+}
+
+.paper-select p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 18px;
+}
+
+.quantity-c {
+  display: flex;
+  flex-wrap: wrap;
+  gap : 10px;
+  justify-content: space-between;
+  margin-bottom: 17px;
+  width: 100%;
+}
+
+.quantity input {
+  padding: 7px;
+  margin: 3px 0 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.quantity p,
+.calendar p {
+  margin-bottom: 0;
+}
+
+.quantity-buttons {
+    display: flex;
+    gap: 10px;
+    width: 40%;
+    
+  }
+  
+  .quantity-button {
+    border-radius: 12px;
+    background-color: #9276bd;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 12px 16px;
+    box-shadow: none;
+    flex-grow: 1; 
+    
+  } 
+ 
+  .quantity-buttons button:focus{
+    background-color: #9276bd;
+    color: black;
+  }
+
+
+  .bottom-layer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+  
+  .proceed-button button {
+    border-radius: 12px;
+    background-color: #FFC36B;
+    font-weight: 700 !important;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 12px 16px;
+    box-shadow: 0;
+    transition: transform 0.3s ease; /* Add transition for smooth zoom effect */
+  }
+  
+  .proceed-button button:hover {
+    transform: scale(1.1); /* Zoom in by 10% when hovering over the button */
+  }
+  
+  .quantity-buttons button {
+    width: fit-content;
+  }
+  
+  
+  .price p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  
